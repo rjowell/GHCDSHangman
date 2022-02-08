@@ -2,8 +2,6 @@ import turtle
 
 t = turtle.Turtle()
 
-def sayHello():
-  print("Hello World")
 
 t.pu()
 t.goto(-50,-50)
