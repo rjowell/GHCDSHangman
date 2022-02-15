@@ -5,11 +5,17 @@ import random
 
 
 
-
-
 wordList = ["help","food","pizza","cheese","beach"]
+
+
+print("chocolate"[2])
+
+
+
+
 guessedLetters = []
 currentWord = random.choice(wordList)
+currentWord = "pizza"
 lenOfCurrentWord = len(currentWord)
 
 
@@ -19,15 +25,16 @@ lenOfCurrentWord = len(currentWord)
 print("Welcome to Mr. Russ' Hangman Game!")
 print("A word has already been chosen for you. It has "+str(lenOfCurrentWord)+" letters.")
 
+def checkLetters(letter):
+  myString = ""
+  for x in range(lenOfCurrentWord):
+    if currentWord[x] == letter:
+      myString += letter+" "
+    else:
+      myString += "_ "
+  print(myString)
+
 userGuess = input("Guess A Letter")
-
-def checkLetters():
-  print("String is"+"hello")
-    
-    
-
-checkLetters()
-
 
 # Length of the guess should be 1
 if len(userGuess) != 1:
@@ -41,6 +48,7 @@ else:
     print("You already guessed that letter")
   else:
     guessedLetters.append(userGuess)
+    checkLetters(userGuess)
 
 
 
