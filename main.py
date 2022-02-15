@@ -3,7 +3,9 @@ import random
 
 
 
-print(len("hamburger"))
+
+
+
 
 wordList = ["help","food","pizza","cheese","beach"]
 guessedLetters = []
@@ -11,8 +13,8 @@ currentWord = random.choice(wordList)
 lenOfCurrentWord = len(currentWord)
 
 
-print("The quick brown fox jumped over the lazy dog")
-print("This is the song that doesn't end")
+#print("The quick brown fox jumped over the lazy dog")
+#print("This is the song that doesn't end")
 
 print("Welcome to Mr. Russ' Hangman Game!")
 print("A word has already been chosen for you. It has "+str(lenOfCurrentWord)+" letters.")
@@ -20,25 +22,31 @@ print("A word has already been chosen for you. It has "+str(lenOfCurrentWord)+" 
 userGuess = input("Guess A Letter")
 
 def checkLetters():
-  
-  for x in range(lenOfCurrentWord):
+  print("String is"+"hello")
     
-    print("_ ")
+    
 
 checkLetters()
+
 
 # Length of the guess should be 1
 if len(userGuess) != 1:
   print("Your guess must be 1 character")
+# only letters
+elif userGuess.isalpha() == False:
+  print("Your guess must be a letter!")
+# You can't guess a letter twice, we need to keep track of the letters guessed so far
 else:
   if userGuess in guessedLetters:
     print("You already guessed that letter")
   else:
     guessedLetters.append(userGuess)
-# You can't guess a letter twice, we need to keep track of the letters guessed so far
-# account for capitalization.
-# only letters
 
+
+
+# account for capitalization.
+
+# if the player has guessed the word
 print(userGuess)
 
 
