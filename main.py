@@ -1,6 +1,62 @@
 import random
 #Step 1 - Create a list of words to choose from and pick one at random
 
+'''
+VARIABLES
+keep track of letters already guessed - list
+Track what stage we're at in the drawing - Int
+Keep track of the word were trying to guess
+Keeping track of what letters have and have not been guessed.
+
+-Ensure that player only inputs a single letter
+-Only letters can be entered, no numbers or punctuation.
+-Can't enter multiple letters
+-Track sCore
+
+STEPS:
+import random
+create a list of 5-6 words (strings)
+figure out how to pick a random word from the list and store it in a variable.
+
+Define a function called "checkLetters"
+Use a for loop based on the length of the chosen word to print out a corresponding number of underscores
+
+'''
+
+print("Welcome to Mr. Russ Hangman Game")
+userInput = input("Please Enter a Letter")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
