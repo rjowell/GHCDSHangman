@@ -2,18 +2,18 @@ import turtle
 
 t = turtle.Turtle()
 
-#Step 1
-t.pu()
-t.goto(-50,-50)
-t.pd()
-t.forward(70)
-t.pu()
-t.backward(35)
-t.left(90)
-#Step 2
-t.pd()
-t.forward(120)
-t.right(90)
+def step1():
+  t.pu()
+  t.goto(-50,-50)
+  t.pd()
+  t.forward(70)
+  t.pu()
+  t.backward(35)
+  t.left(90)
+def step2():
+  t.pd()
+  t.forward(120)
+  t.right(90)
 #Step 3
 t.forward(50)
 t.right(90)
